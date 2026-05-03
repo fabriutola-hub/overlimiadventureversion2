@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/overlimit-adventure/index.html"
+    },
+    {
+      "source": "/css/:path*",
+      "destination": "/overlimit-adventure/css/:path*"
+    },
+    {
+      "source": "/js/:path*",
+      "destination": "/overlimit-adventure/js/:path*"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/overlimit-adventure/images/:path*"
+    },
+    {
+      "source": "/pages/:path*",
+      "destination": "/overlimit-adventure/pages/:path*"
+    },
+    {
+      "source": "/index.html",
+      "destination": "/overlimit-adventure/index.html"
+    }
+  ]
+}
