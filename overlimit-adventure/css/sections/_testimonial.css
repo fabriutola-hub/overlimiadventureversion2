@@ -1,0 +1,52 @@
+/* ============================================
+   SECTIONS - TESTIMONIAL
+   ============================================ */
+/* ============================================
+   TESTIMONIAL
+   ============================================ */
+
+.testimonial {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  padding: var(--space-2xl);
+  position: relative;
+}
+
+.testimonial::before,
+.testimonial::after {
+  content: '"';
+  font-family: Georgia, serif;
+  font-size: 6rem;
+  color: rgba(217,119,6,0.15);
+  line-height: 1;
+  position: absolute;
+}
+
+.testimonial::before {
+  top: 0;
+  left: 0;
+}
+
+.testimonial::after {
+  bottom: -20px;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.testimonial-text {
+  font-family: var(--font-script);
+  font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+  color: var(--slate-gray);
+  line-height: 1.45;
+  margin-bottom: var(--space-lg);
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--midnight);
+}
+

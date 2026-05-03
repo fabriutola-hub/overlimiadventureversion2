@@ -1,0 +1,47 @@
+/* ============================================
+   SECTIONS - CHECKLIST
+   ============================================ */
+/* ============================================
+   CHECKLIST
+   ============================================ */
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.6);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.checklist-item:hover {
+  background: var(--cloud-white);
+  box-shadow: var(--shadow-sm);
+  transform: translateX(4px);
+}
+
+.checklist-item svg {
+  width: 24px;
+  height: 24px;
+  color: var(--glacier-teal);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checklist-text {
+  font-size: 1rem;
+  color: var(--slate-gray);
+  line-height: 1.55;
+}
+
+.checklist-text strong {
+  color: var(--midnight);
+}
+

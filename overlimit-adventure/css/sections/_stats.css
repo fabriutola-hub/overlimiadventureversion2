@@ -1,0 +1,232 @@
+/* ============================================
+   SECTIONS — STATS & CONFIANZA (Dramático)
+   ============================================ */
+
+.section-stats {
+  position: relative;
+  background: var(--void-black);
+  padding: var(--space-5xl) 0;
+  overflow: hidden;
+}
+
+/* Ambient background glow */
+.stats-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.035) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.stats-header {
+  text-align: center;
+  margin-bottom: var(--space-4xl);
+  position: relative;
+  z-index: 1;
+}
+
+.stats-eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+}
+
+.stats-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--pure-white);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-lg);
+}
+
+.stats-title em {
+  font-style: normal;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stats-title-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto;
+  border-radius: var(--radius-full);
+}
+
+/* ============================================================
+   STATS ROW
+   ============================================================ */
+
+.stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-4xl);
+  position: relative;
+  z-index: 1;
+}
+
+.stat-block {
+  flex: 1;
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 900;
+  color: var(--pure-white);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--stone);
+  max-width: 160px;
+  line-height: 1.5;
+}
+
+/* Vertical dividers */
+.stat-divider {
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(180deg, transparent, rgba(201, 168, 76, 0.3), transparent);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   TESTIMONIAL BLOCK
+   ============================================================ */
+
+.testimonial-block {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  padding: var(--space-3xl) var(--space-xl);
+  position: relative;
+  z-index: 1;
+}
+
+/* Top border line */
+.testimonial-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.3), transparent);
+}
+
+.testimonial-quote-mark {
+  font-family: Georgia, serif;
+  font-size: 8rem;
+  line-height: 1;
+  color: rgba(201, 168, 76, 0.08);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.testimonial-quote {
+  font-family: var(--font-script);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  margin-bottom: var(--space-xl);
+  font-style: italic;
+  position: relative;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.author-name {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+.author-origin {
+  font-size: 12px;
+  color: var(--stone);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .section-stats {
+    padding: var(--space-4xl) 0;
+  }
+
+  .stats-row {
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+
+  .stat-block {
+    flex: 1 1 40%;
+    min-width: 140px;
+    padding: var(--space-lg) var(--space-sm);
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-number {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+  }
+
+  .testimonial-block {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .testimonial-quote-mark {
+    font-size: 5rem;
+    top: 10px;
+  }
+}

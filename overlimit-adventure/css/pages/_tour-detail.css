@@ -1,0 +1,40 @@
+/* ============================================
+   PAGES - TOUR DETAIL
+   Team avatar, detail shell, expedition cards
+   ============================================ */
+/* ============================================
+   TEAM / AVATAR
+   ============================================ */
+
+.team-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto var(--space-md);
+  background: var(--gradient-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.team-avatar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, var(--inca-gold), var(--glacier-teal));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.team-avatar svg {
+  width: 70px;
+  height: 70px;
+  color: white;
+}
+

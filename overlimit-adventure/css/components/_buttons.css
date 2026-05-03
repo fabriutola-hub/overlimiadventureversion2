@@ -1,0 +1,123 @@
+/* ============================================
+   COMPONENTS - BUTTONS v3
+   Negro · Blanco · Dorado
+   ============================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 16px 32px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  white-space: nowrap;
+}
+
+/* Shine effect */
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-shine);
+  transform: translateX(-100%);
+  transition: transform 0.7s ease;
+}
+
+.btn:hover::before {
+  transform: translateX(100%);
+}
+
+/* Primary — Dorado */
+.btn-primary {
+  background: var(--gradient-cta);
+  color: var(--void-black);
+  box-shadow: var(--shadow-glow), 0 0 0 1px rgba(201,168,76,0.2) inset;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(201,168,76,0.35), 0 0 0 1px rgba(201,168,76,0.3) inset;
+}
+
+.btn-primary:active {
+  transform: translateY(-1px);
+}
+
+/* Secondary — Outline Blanco */
+.btn-secondary {
+  background: transparent;
+  color: var(--pure-white);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  box-shadow: 0 0 0 0 rgba(255,255,255,0);
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Outline Dorado */
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+  border: 1.5px solid var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--void-black);
+  transform: translateY(-2px);
+}
+
+/* Ghost */
+.btn-ghost {
+  background: transparent;
+  color: var(--silver);
+  padding: 10px 20px;
+}
+
+.btn-ghost:hover {
+  color: var(--gold);
+}
+
+/* Sizes */
+.btn-large {
+  padding: 20px 44px;
+  font-size: 14px;
+}
+
+.btn-small {
+  padding: 10px 20px;
+  font-size: 11px;
+}
+
+/* With Icon */
+.btn-with-icon svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.btn-with-icon:hover svg {
+  transform: translateX(5px);
+}
+
+/* Content relative for z-index */
+.btn > * {
+  position: relative;
+  z-index: 1;
+}

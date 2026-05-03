@@ -1,0 +1,30 @@
+/* ============================================
+   LAYOUT - CONTAINERS & SECTIONS
+   ============================================ */
+/* ============================================
+   LAYOUT
+   ============================================ */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-4xl) 0;
+  position: relative;
+}
+
+.section-dark {
+  background-color: var(--andes-deep);
+  color: var(--cloud-white);
+}
+
+.section-dark .section-title {
+  color: var(--cloud-white);
+}
+
+.section-light {
+  background-color: var(--mist-gray);
+}

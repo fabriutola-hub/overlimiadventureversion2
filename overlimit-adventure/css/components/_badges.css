@@ -1,0 +1,39 @@
+/* ============================================
+   COMPONENTS - BADGES
+   ============================================ */
+/* ============================================
+   DIFFICULTY BADGES
+   ============================================ */
+
+.difficulty {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.difficulty-easy {
+  background: rgba(34,197,94,0.12);
+  color: #16A34A;
+}
+
+.difficulty-moderate {
+  background: rgba(245,158,11,0.12);
+  color: #D97706;
+}
+
+.difficulty-hard {
+  background: rgba(239,68,68,0.12);
+  color: #DC2626;
+}
+
+.difficulty-extreme {
+  background: rgba(124,58,237,0.12);
+  color: #7C3AED;
+}
+

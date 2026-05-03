@@ -1,0 +1,180 @@
+/* ============================================
+   UTILITIES - RESPONSIVE
+   ============================================ */
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .category-card {
+    height: 380px;
+  }
+
+  .amazon-story-grid,
+  .detail-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-sidebar .detail-block {
+    position: static;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    padding: 0 var(--space-md);
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-item.has-dropdown::after {
+    display: none;
+  }
+
+  .language-switch {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .language-switch--mobile {
+    display: inline-flex;
+  }
+
+  .header.scrolled {
+    top: 8px;
+    width: calc(100% - 24px);
+    padding: 10px 20px;
+    border-radius: var(--radius-full);
+  }
+
+  .logo img {
+    height: 56px;
+  }
+
+  .header.scrolled .logo img {
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 130px var(--space-md) 70px;
+    min-height: 50vh;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-steps {
+    flex-direction: column;
+  }
+  
+  .process-steps::before {
+    display: none;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-brand {
+    max-width: 100%;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .amazon-category-grid,
+  .tour-grid,
+  .highlight-grid,
+  .related-grid,
+  .amazon-facts,
+  .expedition-meta,
+  .detail-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-group-header,
+  .expedition-footer,
+  .page-header-actions,
+  .page-header-metrics {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .category-card {
+    height: 340px;
+  }
+  
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero {
+    padding: 130px var(--space-md) 80px;
+  }
+}
+

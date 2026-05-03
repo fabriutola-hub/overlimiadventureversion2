@@ -1,0 +1,886 @@
+/* ============================================
+   ISLA DEL SOL — DISEÑO PREMIUM
+   Elegante · Creativo · Inmersivo
+   ============================================ */
+
+/* ============================================================
+   HERO / PAGE HEADER MEJORADO
+   ============================================================ */
+
+.isla-hero {
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 140px 0 80px;
+  overflow: hidden;
+}
+
+.isla-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.isla-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1.12); }
+}
+
+.isla-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(10,10,10,0.2) 0%,
+    rgba(10,10,10,0.4) 40%,
+    rgba(10,10,10,0.85) 100%);
+  z-index: 1;
+}
+
+.isla-hero-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.5) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.isla-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 var(--space-lg);
+}
+
+/* Breadcrumb */
+.isla-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--space-lg);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.isla-breadcrumb a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.isla-breadcrumb a:hover {
+  color: var(--gold-light);
+}
+
+.isla-breadcrumb-sep {
+  color: rgba(255,255,255,0.3);
+  font-size: 10px;
+}
+
+/* Title */
+.isla-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  color: var(--pure-white);
+  line-height: 1.05;
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.03em;
+}
+
+.isla-hero-title em {
+  font-style: normal;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.isla-hero-subtitle {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  color: rgba(255,255,255,0.85);
+  line-height: 1.65;
+  max-width: 600px;
+  margin: 0 auto var(--space-xl);
+}
+
+/* Metrics pills */
+.isla-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: var(--space-xl);
+}
+
+.isla-metric {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--pure-white);
+}
+
+.isla-metric svg {
+  width: 16px;
+  height: 16px;
+  color: var(--gold);
+}
+
+.isla-metric strong {
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+/* Duration tabs */
+.isla-duration-tabs {
+  display: inline-flex;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-full);
+  padding: 6px;
+  gap: 4px;
+}
+
+.isla-duration-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.isla-duration-tab:hover {
+  color: var(--pure-white);
+  background: rgba(255,255,255,0.06);
+}
+
+.isla-duration-tab.active {
+  background: var(--gradient-cta);
+  color: var(--void-black);
+  box-shadow: 0 4px 20px rgba(201,168,76,0.3);
+}
+
+/* Scroll indicator */
+.isla-scroll {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.5);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.isla-scroll-line {
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  position: relative;
+  overflow: hidden;
+}
+
+.isla-scroll-line::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--gold);
+  animation: scrollDot 2s ease-in-out infinite;
+}
+
+@keyframes scrollDot {
+  0% { top: -8px; opacity: 1; }
+  100% { top: 32px; opacity: 0; }
+}
+
+/* ============================================================
+   HIGHLIGHTS SECTION
+   ============================================================ */
+
+.isla-highlights {
+  background: linear-gradient(180deg, #F5F3EE 0%, #FAF8F4 100%);
+  padding: var(--space-5xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.isla-highlights::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background-image: radial-gradient(circle at center, rgba(201,168,76,0.25) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.isla-section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-3xl);
+  position: relative;
+  z-index: 1;
+}
+
+.isla-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-md);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+
+.isla-section-eyebrow::before,
+.isla-section-eyebrow::after {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+
+.isla-section-eyebrow::after {
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.isla-section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--void-black);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-md);
+}
+
+.isla-section-title em {
+  font-style: normal;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.isla-section-lead {
+  font-size: 1.1rem;
+  color: var(--fog);
+  line-height: 1.7;
+}
+
+/* Highlights grid */
+.isla-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.isla-highlight {
+  background: var(--pure-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  text-align: center;
+  border: 1px solid rgba(201,168,76,0.08);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.isla-highlight:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+  border-color: rgba(201,168,76,0.18);
+}
+
+.isla-highlight-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-md);
+  background: var(--gradient-glow);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isla-highlight-icon svg {
+  width: 26px;
+  height: 26px;
+  color: var(--gold);
+}
+
+.isla-highlight-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--void-black);
+  margin-bottom: 6px;
+}
+
+.isla-highlight-text {
+  font-size: 0.85rem;
+  color: var(--fog);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   TIMELINE ITINERARIO
+   ============================================================ */
+
+.isla-itinerary {
+  background: var(--pure-white);
+  padding: var(--space-5xl) 0;
+  position: relative;
+}
+
+.isla-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* Central line */
+.isla-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    var(--gold) 10%,
+    var(--gold) 90%,
+    transparent 100%);
+  transform: translateX(-50%);
+}
+
+.isla-timeline-item {
+  position: relative;
+  padding-bottom: var(--space-3xl);
+}
+
+.isla-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Day number circle */
+.isla-timeline-number {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  background: var(--gradient-cta);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--void-black);
+  box-shadow: 0 4px 20px rgba(201,168,76,0.3);
+  z-index: 2;
+}
+
+.isla-timeline-content {
+  width: calc(50% - 48px);
+  background: #FFFCF8;
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  border: 1px solid rgba(201,168,76,0.08);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.isla-timeline-item:nth-child(odd) .isla-timeline-content {
+  margin-left: auto;
+}
+
+.isla-timeline-item:nth-child(even) .isla-timeline-content {
+  margin-right: auto;
+}
+
+.isla-timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+  border-color: rgba(201,168,76,0.15);
+}
+
+.isla-timeline-label {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--void-black);
+  color: var(--pure-white);
+  border-radius: var(--radius-full);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.isla-timeline-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--void-black);
+  margin-bottom: 8px;
+}
+
+.isla-timeline-text {
+  font-size: 0.9rem;
+  color: var(--fog);
+  line-height: 1.7;
+}
+
+.isla-timeline-activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: var(--space-md);
+}
+
+.isla-timeline-activity {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(201,168,76,0.06);
+  border: 1px solid rgba(201,168,76,0.1);
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold-dark);
+}
+
+.isla-timeline-activity svg {
+  width: 14px;
+  height: 14px;
+  color: var(--gold);
+}
+
+/* ============================================================
+   INCLUYE / NO INCLUYE
+   ============================================================ */
+
+.isla-includes {
+  background: linear-gradient(180deg, #FAF8F4 0%, #F5F3EE 100%);
+  padding: var(--space-5xl) 0;
+  position: relative;
+}
+
+.isla-includes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.isla-includes-card {
+  background: var(--pure-white);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-2xl);
+  border: 1px solid rgba(201,168,76,0.08);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+}
+
+.isla-includes-card--no {
+  border-color: rgba(0,0,0,0.05);
+}
+
+.isla-includes-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.isla-includes-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isla-includes-icon--yes {
+  background: rgba(201,168,76,0.1);
+}
+
+.isla-includes-icon--no {
+  background: rgba(0,0,0,0.04);
+}
+
+.isla-includes-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.isla-includes-icon--yes svg {
+  color: var(--gold);
+}
+
+.isla-includes-icon--no svg {
+  color: var(--stone);
+}
+
+.isla-includes-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--void-black);
+}
+
+.isla-includes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.isla-includes-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: var(--slate-gray);
+  line-height: 1.5;
+}
+
+.isla-includes-list li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.isla-includes-card--yes .isla-includes-list li::before {
+  content: '✓';
+  background: rgba(201,168,76,0.1);
+  color: var(--gold);
+}
+
+.isla-includes-card--no .isla-includes-list li::before {
+  content: '✕';
+  background: rgba(0,0,0,0.04);
+  color: var(--stone);
+}
+
+/* ============================================================
+   GALERÍA
+   ============================================================ */
+
+.isla-gallery {
+  background: var(--pure-white);
+  padding: var(--space-5xl) 0;
+}
+
+.isla-gallery-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: 280px 280px;
+  gap: 16px;
+}
+
+.isla-gallery-item {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.isla-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.isla-gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.isla-gallery-item:first-child {
+  grid-row: span 2;
+}
+
+.isla-gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 20px 20px;
+  background: linear-gradient(0deg, rgba(10,10,10,0.7) 0%, transparent 100%);
+  color: var(--pure-white);
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.isla-gallery-item:hover .isla-gallery-caption {
+  opacity: 1;
+}
+
+/* ============================================================
+   CTA RESERVA
+   ============================================================ */
+
+.isla-cta {
+  position: relative;
+  background: linear-gradient(135deg, var(--void-black) 0%, var(--charcoal) 100%);
+  padding: var(--space-5xl) 0;
+  overflow: hidden;
+}
+
+.isla-cta::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.isla-cta::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.isla-cta-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.isla-cta-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+}
+
+.isla-cta-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  line-height: 1.15;
+  margin-bottom: var(--space-md);
+}
+
+.isla-cta-title em {
+  font-style: normal;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.isla-cta-text {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+.isla-cta-price {
+  margin-bottom: var(--space-xl);
+}
+
+.isla-cta-price-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 6px;
+}
+
+.isla-cta-price-value {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.isla-cta-price-note {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 8px;
+}
+
+.isla-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  .isla-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .isla-timeline::before {
+    left: 28px;
+  }
+
+  .isla-timeline-number {
+    left: 28px;
+    transform: translateX(-50%);
+  }
+
+  .isla-timeline-content {
+    width: auto;
+    margin-left: 64px !important;
+    margin-right: 0 !important;
+  }
+
+  .isla-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .isla-hero {
+    min-height: 65vh;
+    padding: 120px 0 60px;
+  }
+
+  .isla-metrics {
+    gap: 8px;
+  }
+
+  .isla-metric {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .isla-duration-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: var(--radius-xl);
+  }
+
+  .isla-highlights-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .isla-includes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .isla-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 240px);
+  }
+
+  .isla-gallery-item:first-child {
+    grid-row: span 1;
+  }
+
+  .isla-timeline-content {
+    margin-left: 56px !important;
+    padding: var(--space-lg);
+  }
+
+  .isla-timeline-number {
+    width: 44px;
+    height: 44px;
+    font-size: 0.9rem;
+  }
+
+  .isla-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .isla-cta-buttons .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}

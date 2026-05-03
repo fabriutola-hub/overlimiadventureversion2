@@ -1,0 +1,461 @@
+/* ============================================
+   UYUNI 2 DÍAS - DISEÑO PREMIUM ESPECÍFICO
+   ============================================ */
+
+/* ---------- DIARY DAYS ---------- */
+.diary-section {
+  padding: var(--space-5xl) 0;
+  background: linear-gradient(180deg, var(--void-black) 0%, #0D0D0D 50%, var(--void-black) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.diary-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
+}
+
+.diary-header {
+  text-align: center;
+  margin-bottom: 64px;
+  position: relative;
+  z-index: 1;
+}
+
+.diary-header .section-subtitle {
+  color: var(--gold-light);
+}
+
+.diary-header .section-title {
+  color: var(--pure-white);
+}
+
+.day-card {
+  position: relative;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  margin-bottom: 48px;
+  border: 1px solid rgba(255,255,255,0.05);
+  background: linear-gradient(165deg, rgba(20,20,20,0.9) 0%, rgba(10,10,10,0.95) 100%);
+}
+
+.day-card:last-child {
+  margin-bottom: 0;
+}
+
+.day-card__header {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.day-card__header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 8s ease;
+}
+
+.day-card:hover .day-card__header img {
+  transform: scale(1.05);
+}
+
+.day-card__header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10,10,10,0.3) 0%,
+    rgba(10,10,10,0.7) 60%,
+    rgba(10,10,10,0.95) 100%
+  );
+}
+
+.day-card__number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-heading);
+  font-size: clamp(6rem, 15vw, 10rem);
+  font-weight: 900;
+  color: rgba(255,255,255,0.04);
+  line-height: 1;
+  pointer-events: none;
+  letter-spacing: -0.05em;
+}
+
+.day-card__title-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  z-index: 2;
+}
+
+.day-card__badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  background: rgba(201,168,76,0.12);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  margin-bottom: 12px;
+  border: 1px solid rgba(201,168,76,0.15);
+}
+
+.day-card__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  line-height: 1.2;
+}
+
+.day-card__body {
+  padding: 40px;
+}
+
+.day-timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.day-timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(180deg, var(--gold), rgba(201,168,76,0.2), transparent);
+}
+
+.day-stop {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.day-stop:last-child {
+  padding-bottom: 0;
+}
+
+.day-stop__dot {
+  position: absolute;
+  left: -28px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: var(--void-black);
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-stop__dot::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(201,168,76,0.5);
+}
+
+.day-stop__time {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.day-stop__name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  margin-bottom: 6px;
+}
+
+.day-stop__desc {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+}
+
+/* Connector between days */
+.day-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 32px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.day-connector__line {
+  flex: 1;
+  max-width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+}
+
+.day-connector__icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.15) 0%, rgba(201,168,76,0.05) 100%);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-connector__icon svg {
+  width: 22px;
+  height: 22px;
+  color: var(--gold);
+}
+
+.day-connector__label {
+  position: absolute;
+  top: 56px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(201,168,76,0.6);
+  font-weight: 600;
+}
+
+/* ---------- THERMAS SECTION ---------- */
+.thermas-section {
+  padding: var(--space-5xl) 0;
+  background: linear-gradient(180deg, var(--pure-white) 0%, var(--mist-gray) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.thermas-section::before {
+  content: '';
+  position: absolute;
+  bottom: -300px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201,168,76,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.thermas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.thermas-content__eyebrow {
+  font-family: var(--font-script);
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.thermas-content__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--void-black);
+  margin-bottom: 24px;
+}
+
+.thermas-content__title span {
+  color: var(--gold);
+}
+
+.thermas-content__text {
+  font-size: 1.05rem;
+  color: var(--slate-gray);
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.thermas-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.thermas-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.04) 0%, rgba(201,168,76,0.01) 100%);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(201,168,76,0.08);
+  transition: all 0.35s ease;
+}
+
+.thermas-benefit:hover {
+  background: linear-gradient(135deg, rgba(201,168,76,0.08) 0%, rgba(201,168,76,0.03) 100%);
+  transform: translateX(4px);
+}
+
+.thermas-benefit__icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.1) 0%, rgba(201,168,76,0.05) 100%);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.thermas-benefit__icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--gold);
+}
+
+.thermas-benefit__text strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--void-black);
+  margin-bottom: 2px;
+}
+
+.thermas-benefit__text span {
+  font-size: 0.85rem;
+  color: var(--slate-gray);
+}
+
+.thermas-visual {
+  position: relative;
+}
+
+.thermas-visual__main {
+  position: relative;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.thermas-visual__main img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.thermas-visual__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(10,10,10,0.6) 0%, transparent 50%);
+}
+
+.thermas-visual__caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+}
+
+.thermas-visual__caption-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  margin-bottom: 4px;
+}
+
+.thermas-visual__caption-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.thermas-visual__badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: var(--void-black);
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: var(--shadow-glow);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .thermas-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .day-card__header {
+    height: 220px;
+  }
+  
+  .day-card__body {
+    padding: 28px;
+  }
+  
+  .day-card__title-wrap {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .day-card__header {
+    height: 180px;
+  }
+  
+  .day-card__number {
+    font-size: 5rem;
+  }
+  
+  .day-card__body {
+    padding: 20px;
+  }
+  
+  .day-timeline {
+    padding-left: 24px;
+  }
+  
+  .day-stop__dot {
+    left: -22px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .day-stop__dot::after {
+    width: 4px;
+    height: 4px;
+  }
+  
+  .thermas-visual__main img {
+    height: 320px;
+  }
+}

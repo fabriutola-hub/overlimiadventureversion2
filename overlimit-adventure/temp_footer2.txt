@@ -1,0 +1,59 @@
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="footer-logo">
+<img src="../images/logo.png" alt="OverLimit Adventure" style="height: 40px; width: auto;">
+</div>
+<p class="footer-text">Especialistas en trekking y climbing en Bolivia. Llevamos tu pasion por la aventura al siguiente nivel.</p>
+<div class="footer-social">
+<a href="https://www.facebook.com/share/181tPf7sYq/" target="_blank" aria-label="Facebook">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+</svg>
+</a>
+<a href="https://www.instagram.com/overlimitadventure?igsh=emJpdnFpcjJmeDIw" target="_blank" aria-label="Instagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+</svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="footer-title">Explora</h4>
+<div class="footer-links">
+<a href="trekking.html">Trekking</a>
+<a href="climbing.html">Climbing</a>
+<a href="amazon.html">Amazon</a>
+<a href="classic-tours.html">Classic Tours</a>
+</div>
+</div>
+<div>
+<h4 class="footer-title">Ayuda</h4>
+<div class="footer-links">
+<a href="contacto.html">Contacto</a>
+<a href="nosotros.html">Nosotros</a>
+</div>
+</div>
+<div>
+<h4 class="footer-title">Contacto</h4>
+<div class="footer-contact">
+<div class="footer-contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+</svg>Sagarnaga 339, La Paz</div>
+<div class="footer-contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+</svg>+591 62364372</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copyright">&copy; 2026 OverLimitAdventure. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Death Road 3 Dias | OverLimitAdventure</title>
+  <meta name="description" content="Death Road 3 Dias: Aventura extendida con descenso, Coroico y exploracion suave de los Yungas.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar" id="topBar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <a href="tel:+59162364372" class="top-bar-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>+591 62364372</span>
+        </a>
+        <a href="https://wa.me/59162364372" class="top-bar-link" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.013 8.013 0 01-5.45-2.125L2 21l3.125-5.45A8.013 8.013 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8z" />
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-text">Sagarnaga 339, La Paz, Bolivia</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="OverLimit Adventure">
+      </a>
+      <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="trekking.html" class="nav-link">
+              Trekking
+              <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </a>
+            <div class="dropdown" style="min-width: 420px;">
+              <div class="dropdown-inner">
+                <div class="dropdown-col">
+                  <span class="dropdown-label">Salar de Uyuni</span>
+                  <a href="uyuni-full-day.html" class="dropdown-link">Full Day</a>
+                  <a href="uyuni-2-days.html" class="dropdown-link">2 Días</a>
+                  <a href="uyuni-3-days.html" class="dropdown-link">3 Días Clásico</a>
+                  <a href="uyuni-3-days-atacama.html" class="dropdown-link">Uyuni - Atacama</a>
+                  <a href="uyuni-from-san-pedro.html" class="dropdown-link">Desde San Pedro</a>
+                  <a href="uyuni-deluxe.html" class="dropdown-link">Deluxe</a>
+                  <a href="uyuni-premium-atacama.html" class="dropdown-link">Premium Atacama</a>
+                </div>
+                <div class="dropdown-col">
+                  <span class="dropdown-label">Otros Destinos</span>
+                  <a href="cordillera-real.html" class="dropdown-link">Cordillera Real</a>
+                  <a href="yungas.html" class="dropdown-link">Yungas</a>
+                  <a href="copacabana.html" class="dropdown-link">Copacabana</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="climbing.html" class="nav-link">
+              Climbing
+              <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </a>
+            <div class="dropdown">
+              <div class="dropdown-inner">
+                <div class="dropdown-col">
+                  <span class="dropdown-label">Montañas Populares</span>
+                  <a href="climbing-huayna-potosi.html" class="dropdown-link">Huayna Potosí</a>
+                  <a href="climbing-illimani.html" class="dropdown-link">Illimani</a>
+                  <a href="climbing-sajama.html" class="dropdown-link">Sajama</a>
+                  <a href="climbing-condoriri.html" class="dropdown-link">Condoriri</a>
+                </div>
+                <div class="dropdown-col">
+                  <span class="dropdown-label">Más Ascensos</span>
+                  <a href="climbing-mururata.html" class="dropdown-link">Mururata</a>
+                  <a href="climbing-pequeno-alpamayo.html" class="dropdown-link">Pequeño Alpamayo</a>
+                  <a href="climbing-parinacota.html" class="dropdown-link">Parinacota</a>
+                  <a href="climbing-acotango.html" class="dropdown-link">Acotango</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="amazon.html" class="nav-link">Amazon</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="classic-tours.html" class="nav-link">
+              Classic Tours
+              <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </a>
+            <div class="dropdown" style="min-width: 760px;">
+              <div class="dropdown-inner">
+                <div class="dropdown-col">
+                  <span class="dropdown-label">Destinos</span>
+                  <a href="classic-tiwanaku.html" class="dropdown-link">Tiwanaku</a>
+                  <a href="classic-charquini.html" class="dropdown-link">Charquini</a>
+                </div>
+                <div class="dropdown-col">
+                  <span class="dropdown-label">Copacabana</span>
+                  <a href="copacabana-1-day.html" class="dropdown-link">1 Dia</a>
+                  <a href="copacabana-2-days.html" class="dropdown-link">2 Dias</a>
+                  <a href="copacabana-3-days.html" class="dropdown-link">3 Dias</a>
+                </div>
+                <div class="dropdown-col">
+                  <span class="dropdown-label">Isla del Sol</span>
+                  <a href="isla-del-sol-1-day.html" class="dropdown-link">1 Dia</a>
+                  <a href="isla-del-sol-2-days.html" class="dropdown-link">2 Dias</a>
+                  <a href="isla-del-sol-3-days.html" class="dropdown-link">3 Dias</a>
+                </div>
+                <div class="dropdown-col">
+                  <span class="dropdown-label">Death Road</span>
+                  <a href="death-road-1-day.html" class="dropdown-link">1 Dia</a>
+                  <a href="death-road-2-days.html" class="dropdown-link">2 Dias</a>
+                  <a href="death-road-3-days.html" class="dropdown-link">3 Dias</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-cta">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <div class="mobile-nav-link">
+            <span>Trekking</span>
+            <button class="mobile-dropdown-toggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></button>
+          </div>
+          <div class="mobile-dropdown-menu">
+            <div>
+              <div class="mobile-dropdown-group"><div class="mobile-dropdown-label">Salar de Uyuni</div><a href="uyuni-full-day.html" class="mobile-dropdown-link">Full Day</a><a href="uyuni-2-days.html" class="mobile-dropdown-link">2 Días</a><a href="uyuni-3-days.html" class="mobile-dropdown-link">3 Días Clásico</a><a href="uyuni-3-days-atacama.html" class="mobile-dropdown-link">Uyuni - Atacama</a><a href="uyuni-from-san-pedro.html" class="mobile-dropdown-link">Desde San Pedro</a><a href="uyuni-deluxe.html" class="mobile-dropdown-link">Deluxe</a><a href="uyuni-premium-atacama.html" class="mobile-dropdown-link">Premium Atacama</a></div><div class="mobile-dropdown-group"><div class="mobile-dropdown-label">Otros Destinos</div><a href="cordillera-real.html" class="mobile-dropdown-link">Cordillera Real</a><a href="yungas.html" class="mobile-dropdown-link">Yungas</a><a href="copacabana.html" class="mobile-dropdown-link">Copacabana</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="mobile-nav-item">
+          <div class="mobile-nav-link">
+            <span>Climbing</span>
+            <button class="mobile-dropdown-toggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></button>
+          </div>
+          <div class="mobile-dropdown-menu">
+            <div>
+              <div class="mobile-dropdown-group"><div class="mobile-dropdown-label">Montañas Populares</div><a href="climbing-huayna-potosi.html" class="mobile-dropdown-link">Huayna Potosí</a><a href="climbing-illimani.html" class="mobile-dropdown-link">Illimani</a><a href="climbing-sajama.html" class="mobile-dropdown-link">Sajama</a><a href="climbing-condoriri.html" class="mobile-dropdown-link">Condoriri</a></div>
+              <div class="mobile-dropdown-group"><div class="mobile-dropdown-label">Más Ascensos</div><a href="climbing-mururata.html" class="mobile-dropdown-link">Mururata</a><a href="climbing-pequeno-alpamayo.html" class="mobile-dropdown-link">Pequeño Alpamayo</a><a href="climbing-parinacota.html" class="mobile-dropdown-link">Parinacota</a><a href="climbing-acotango.html" class="mobile-dropdown-link">Acotango</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="mobile-nav-item"><a href="amazon.html" class="mobile-nav-link">Amazon</a></li>
+        <li class="mobile-nav-item">
+          <div class="mobile-nav-link">
+            <span>Classic Tours</span>
+            <button class="mobile-dropdown-toggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></button>
+          </div>
+          <div class="mobile-dropdown-menu">
+            <div>
+              <div class="mobile-dropdown-group"><div class="mobile-dropdown-label">Destinos</div><a href="classic-tiwanaku.html" class="mobile-dropdown-link">Tiwanaku</a><a href="classic-charquini.html" class="mobile-dropdown-link">Charquini</a></div>
+              <div class="mobile-dropdown-group"><div class="mobile-dropdown-label">Copacabana</div><a href="copacabana-1-day.html" class="mobile-dropdown-link">1 Dia</a><a href="copacabana-2-days.html" class="mobile-dropdown-link">2 Dias</a><a href="copacabana-3-days.html" class="mobile-dropdown-link">3 Dias</a></div>
+              <div class="mobile-dropdown-group"><div class="mobile-dropdown-label">Isla del Sol</div><a href="isla-del-sol-1-day.html" class="mobile-dropdown-link">1 Dia</a><a href="isla-del-sol-2-days.html" class="mobile-dropdown-link">2 Dias</a><a href="isla-del-sol-3-days.html" class="mobile-dropdown-link">3 Dias</a></div>
+              <div class="mobile-dropdown-group"><div class="mobile-dropdown-label">Death Road</div><a href="death-road-1-day.html" class="mobile-dropdown-link">1 Dia</a><a href="death-road-2-days.html" class="mobile-dropdown-link">2 Dias</a><a href="death-road-3-days.html" class="mobile-dropdown-link">3 Dias</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="mobile-nav-item"><a href="nosotros.html" class="mobile-nav-link">Nosotros</a></li>
+      </ul>
+      <a href="contacto.html" class="mobile-nav-cta">Contacto</a>
+    </div>
+  </div>
+
+  <!-- Hero Tour -->
+  <section class="tour-hero">
+    <div class="tour-hero__bg"><img src="../images/camino_de_la_muerte.png" alt="Death Road Bolivia"></div>
+    <div class="tour-hero__overlay"></div>
+    <div class="container">
+      <div class="tour-hero__content">
+        <div class="tour-hero__badge">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          Experiencia completa
+        </div>
+        <h1 class="tour-hero__title">Death Road <span>3 Dias</span></h1>
+        <p class="tour-hero__subtitle">Aventura extendida con descenso, Coroico y exploracion suave de los Yungas. La experiencia Death Road mas completa que ofrecemos.</p>
+        <div class="tour-hero__meta">
+          <div class="tour-hero__meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <strong>3 Dias</strong> de duracion
+          </div>
+          <div class="tour-hero__meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            <strong>2 noches</strong> en los Yungas
+          </div>
+          <div class="tour-hero__meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            <strong>64 km</strong> de descenso + caminatas
+          </div>
+        </div>
+        <div class="tour-hero__price">
+          <span class="tour-hero__price-label">Desde</span>
+          <span class="tour-hero__price-value">USD 240 <span>por persona</span></span>
+        </div>
+        <div class="tour-hero__buttons">
+          <a href="https://wa.me/59162364372?text=Hola%2C%20quiero%20reservar%20el%20tour%20Death%20Road%203%20Dias." class="btn btn-primary btn-large" target="_blank">Reservar ahora</a>
+          <a href="classic-tours.html" class="btn btn-secondary">Volver a Classic Tours</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Bar -->
+  <div class="tour-info-bar">
+    <div class="tour-info-bar__inner">
+      <div class="tour-info-bar__item">
+        <div class="tour-info-bar__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <span class="tour-info-bar__label">Duracion</span>
+        <span class="tour-info-bar__value">3 Dias</span>
+      </div>
+      <div class="tour-info-bar__item">
+        <div class="tour-info-bar__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <span class="tour-info-bar__label">Destino</span>
+        <span class="tour-info-bar__value">La Paz / Yungas</span>
+      </div>
+      <div class="tour-info-bar__item">
+        <div class="tour-info-bar__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </div>
+        <span class="tour-info-bar__label">Noches</span>
+        <span class="tour-info-bar__value">2 Noches</span>
+      </div>
+      <div class="tour-info-bar__item">
+        <div class="tour-info-bar__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+        </div>
+        <span class="tour-info-bar__label">Precio base</span>
+        <span class="tour-info-bar__value">USD 240</span>
+      </div>
+      <div class="tour-info-bar__item">
+        <div class="tour-info-bar__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        </div>
+        <span class="tour-info-bar__label">Grupo</span>
+        <span class="tour-info-bar__value">4 - 12 pers.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story Section -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visual reveal">
+          <div class="story-visual__main">
+            <img src="../images/camino_de_la_muerte.png" alt="Death Road">
+            <div class="story-visual__frame"></div>
+          </div>
+          <div class="story-visual__accent">
+            <img src="../images/camino_de_la_muerte.png" alt="Death Road">
+          </div>
+          <div class="story-visual__floating-badge">Experiencia completa</div>
+        </div>
+        <div>
+          <p class="story-content__eyebrow">La aventura definitiva</p>
+          <h2 class="story-content__title">Death Road <span>3 dias</span></h2>
+          <p class="story-content__text">La experiencia Death Road mas completa que ofrecemos. Tres dias que combinan la adrenalina del descenso con la exploracion tranquila de los Yungas. Desde la nieve de La Cumbre hasta la selva tropical, pasando por noches en Coroico y caminatas por senderos locales.</p>
+          <p class="story-content__text">Es la opcion ideal para quienes quieren vivir la Death Road sin prisas, con tiempo para disfrutar del paisaje, la gastronomia local y el clima tropical despues de la intensidad del descenso.</p>
+          <div class="story-content__quote">
+            <p>"Fueron tres dias inolvidables. El descenso fue epico y los Yungas nos recibieron con una calidez increible."</p>
+          </div>
+          <div class="day-selector" style="margin-top: 28px;">
+            <a href="death-road-1-day.html" class="day-selector__btn day-selector__btn--inactive">1 Dia</a>
+            <a href="death-road-2-days.html" class="day-selector__btn day-selector__btn--inactive">2 Dias</a>
+            <a href="death-road-3-days.html" class="day-selector__btn day-selector__btn--active">3 Dias</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Itinerario -->
+  <section class="itinerary-section">
+    <div class="container">
+      <div class="itinerary-header">
+        <p class="section-subtitle">Itinerario detallado</p>
+        <h2 class="section-title">Tu aventura <span>dia por dia</span></h2>
+      </div>
+
+      <!-- Dia 1 -->
+      <div class="day-card reveal">
+        <div class="day-card__header">
+          <img src="../images/camino_de_la_muerte.png" alt="Dia 1">
+          <div class="day-card__header-overlay"></div>
+          <div class="day-card__number">01</div>
+          <div class="day-card__title-wrap">
+            <div class="day-card__badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Adrenalina total
+            </div>
+            <h3 class="day-card__title">Descenso completo y primera noche en Coroico</h3>
+          </div>
+        </div>
+        <div class="day-card__body">
+          <ul class="day-card__list">
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>07:00</strong> — Recogida en hotel de La Paz y traslado a La Cumbre (4,650 msnm)</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>08:30</strong> — Charla de seguridad, entrega de equipo y prueba de bicicletas</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>09:00</strong> — Descenso completo por tramos asfaltados y camino antiguo</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>14:00</strong> — Llegada a Yungas, almuerzo buffet y tiempo de descanso</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>16:00</strong> — Traslado a Coroico y check-in en hotel seleccionado</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>19:00</strong> — Cena libre en Coroico y primera noche de descanso tropical</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="day-connector">
+        <div class="day-connector__line"></div>
+        <div class="day-connector__node">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <span class="day-connector__label">Noche 1 en Coroico</span>
+        </div>
+        <div class="day-connector__line"></div>
+      </div>
+
+      <!-- Dia 2 -->
+      <div class="day-card reveal">
+        <div class="day-card__header">
+          <img src="../images/camino_de_la_muerte.png" alt="Dia 2">
+          <div class="day-card__header-overlay"></div>
+          <div class="day-card__number">02</div>
+          <div class="day-card__title-wrap">
+            <div class="day-card__badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Exploracion y naturaleza
+            </div>
+            <h3 class="day-card__title">Recorrido por miradores, cascadas y senderos locales</h3>
+          </div>
+        </div>
+        <div class="day-card__body">
+          <ul class="day-card__list">
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>08:00</strong> — Desayuno en el hotel con vistas a los Yungas</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>09:00</strong> — Caminata por senderos locales hacia miradores panoramicos</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>11:30</strong> — Visita a cascadas cercanas y tiempo para fotografia</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>13:00</strong> — Almuerzo con productos locales frescos de los Yungas</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>15:00</strong> — Tarde libre para piscina, relax o explorar Coroico</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>19:00</strong> — Cena y segunda noche en Coroico</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="day-connector">
+        <div class="day-connector__line"></div>
+        <div class="day-connector__node">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <span class="day-connector__label">Noche 2 en Coroico</span>
+        </div>
+        <div class="day-connector__line"></div>
+      </div>
+
+      <!-- Dia 3 -->
+      <div class="day-card reveal">
+        <div class="day-card__header">
+          <img src="../images/camino_de_la_muerte.png" alt="Dia 3">
+          <div class="day-card__header-overlay"></div>
+          <div class="day-card__number">03</div>
+          <div class="day-card__title-wrap">
+            <div class="day-card__badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              Regreso tranquilo
+            </div>
+            <h3 class="day-card__title">Manana libre y retorno escenico a La Paz</h3>
+          </div>
+        </div>
+        <div class="day-card__body">
+          <ul class="day-card__list">
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>08:00</strong> — Desayuno tranquilo en el hotel sin apuro</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>09:00</strong> — Manana libre para ultimas compras, fotos o relax</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>11:00</strong> — Check-out y almuerzo de despedida en Coroico</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>12:30</strong> — Retorno escenico a La Paz con paradas panoramicas</span>
+            </li>
+            <li class="day-card__list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span><strong>15:30</strong> — Llegada a La Paz y traslado a tu hotel. Cierre del programa</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <span class="pricing-card__badge">Tour 3 Dias</span>
+          <div class="pricing-card__price">USD 240</div>
+          <p class="pricing-card__price-note">Por persona · Grupos de 4 a 12</p>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Todo el descenso de Death Road
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              2 noches de hospedaje en Coroico
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              2 desayunos incluidos
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Caminatas y exploracion de Yungas
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Retorno escenico a La Paz
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Seguro de accidentes
+            </div>
+          </div>
+          <a href="https://wa.me/59162364372?text=Hola%2C%20quiero%20reservar%20el%20tour%20Death%20Road%203%20Dias." class="btn btn-primary" style="width: 100%; text-align: center;" target="_blank">Reservar por WhatsApp</a>
+        </div>
+        <div>
+          <h2 class="pricing-content__title">La experiencia <span>completa</span></h2>
+          <p class="pricing-content__text">La opcion ideal para quienes quieren vivir la Death Road sin prisas, con tiempo para disfrutar del paisaje, la gastronomia local y el clima tropical despues de la intensidad del descenso.</p>
+          <div class="pricing-content__guarantees">
+            <div class="pricing-content__guarantee">
+              <div class="pricing-content__guarantee-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div class="pricing-content__guarantee-text">
+                <strong>Seguridad garantizada</strong>
+                <span>Bicicletas revisadas diariamente y equipo certificado</span>
+              </div>
+            </div>
+            <div class="pricing-content__guarantee">
+              <div class="pricing-content__guarantee-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+              </div>
+              <div class="pricing-content__guarantee-text">
+                <strong>Hospedaje incluido</strong>
+                <span>Dos noches en hotel seleccionado en Coroico</span>
+              </div>
+            </div>
+            <div class="pricing-content__guarantee">
+              <div class="pricing-content__guarantee-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div class="pricing-content__guarantee-text">
+                <strong>Atencion personalizada</strong>
+                <span>Guia delantero y guia trasero en cada grupo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="tour-cta">
+    <div class="tour-cta__bg"><img src="../images/camino_de_la_muerte.png" alt="Death Road"></div>
+    <div class="tour-cta__overlay"></div>
+    <div class="container">
+      <div class="tour-cta__content">
+        <h2 class="tour-cta__title">Listo para la <span>adrenalina</span>?</h2>
+        <p class="tour-cta__text">Reserva tu lugar en la Death Road. Los mejores dias se llenan rapido y queremos que vivas esta experiencia sin igual.</p>
+        <div class="tour-cta__buttons">
+          <a href="https://wa.me/59162364372?text=Hola%2C%20quiero%20reservar%20el%20tour%20Death%20Road%203%20Dias." class="btn btn-primary btn-large" target="_blank">Reservar mi tour</a>
+          <a href="contacto.html" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="../images/logo.png" alt="OverLimit Adventure" style="height: 40px; width: auto;"></div>
+          <p class="footer-text">Especialistas en trekking y climbing en Bolivia. Llevamos tu pasion por la aventura al siguiente nivel.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/181tPf7sYq/" target="_blank" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/overlimitadventure?igsh=emJpdnFpcjJmeDIw" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Explora</h4>
+          <div class="footer-links">
+            <a href="trekking.html">Trekking</a>
+            <a href="climbing.html">Climbing</a>
+            <a href="amazon.html">Amazon</a>
+            <a href="classic-tours.html">Classic Tours</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Ayuda</h4>
+          <div class="footer-links">
+            <a href="contacto.html">Contacto</a>
+            <a href="nosotros.html">Nosotros</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <div class="footer-contact">
+            <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Sagarnaga 339, La Paz</div>
+            <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>+591 62364372</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 OverLimitAdventure. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/59162364372" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

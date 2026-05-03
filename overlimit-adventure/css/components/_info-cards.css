@@ -1,0 +1,75 @@
+/* ============================================
+   COMPONENTS - INFO CARDS & GLASS CARDS
+   ============================================ */
+/* ============================================
+   INFO CARDS (Contacto, etc.)
+   ============================================ */
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--cloud-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.info-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-card-icon svg {
+  width: 26px;
+  height: 26px;
+  color: white;
+}
+
+.info-card-content h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  color: var(--midnight);
+}
+
+.info-card-content p {
+  color: var(--slate-gray);
+  font-size: 0.95rem;
+}
+
+.info-card-content .note {
+  font-size: 0.85rem;
+  color: var(--stone-gray);
+  margin-top: 2px;
+}
+
+/* ============================================
+   GLASS CARD
+   ============================================ */
+
+.glass-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  transition: all var(--transition-base);
+}
+
+.glass-card:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-4px);
+}
+

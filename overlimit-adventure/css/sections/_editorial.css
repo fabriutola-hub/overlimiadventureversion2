@@ -1,0 +1,517 @@
+/* ============================================
+   SECTIONS — TOURS DESTACADOS (Editorial v2)
+   Diseño premium · Grid asimétrico · Efectos
+   ============================================ */
+
+.section-editorial {
+  position: relative;
+  background: linear-gradient(180deg, #F5F3EE 0%, #FAF8F4 50%, #F5F3EE 100%);
+  padding: var(--space-5xl) 0;
+  overflow: hidden;
+}
+
+/* Textura de puntos sutil */
+.section-editorial::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.25;
+  background-image: radial-gradient(circle at center, rgba(201, 168, 76, 0.25) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+/* Glow dorado ambiental */
+.section-editorial::after {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 600px;
+  background: radial-gradient(ellipse at center, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Header */
+.editorial-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto var(--space-4xl);
+  position: relative;
+  z-index: 1;
+}
+
+.editorial-header .section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: var(--space-lg);
+}
+
+.editorial-header .eyebrow-line.dark {
+  width: 48px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+
+.editorial-header .eyebrow-line.dark:last-child {
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.editorial-header .eyebrow-text.dark {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+
+.editorial-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--void-black);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.03em;
+}
+
+.editorial-title em {
+  font-style: normal;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.editorial-lead {
+  font-size: 1.15rem;
+  color: var(--fog);
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   TOURS GRID — Layout asimétrico tipo bento
+   ============================================================ */
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   TOUR CARD BASE
+   ============================================================ */
+
+.tour-card {
+  position: relative;
+}
+
+.tour-card-link {
+  display: flex;
+  flex-direction: column;
+  background: #FFFCF8;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  border: 1px solid rgba(201, 168, 76, 0.08);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.04),
+    0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  position: relative;
+}
+
+/* Barra dorada inferior animada */
+.tour-card-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 3px;
+  background: var(--gradient-cta);
+  border-radius: 3px 3px 0 0;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
+}
+
+.tour-card-link:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.08),
+    0 8px 20px rgba(0, 0, 0, 0.04);
+  border-color: rgba(201, 168, 76, 0.2);
+}
+
+.tour-card-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Efecto shine en hover */
+.tour-card-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-shine);
+  background-size: 200% 200%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.tour-card-link:hover::before {
+  opacity: 1;
+  animation: shineSweep 0.8s ease forwards;
+}
+
+@keyframes shineSweep {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ============================================================
+   FEATURED CARD
+   ============================================================ */
+
+.tour-card--featured .tour-card-link {
+  border-color: rgba(201, 168, 76, 0.18);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(201, 168, 76, 0.1),
+    var(--shadow-gold);
+}
+
+.tour-card--featured .tour-card-link:hover {
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(201, 168, 76, 0.25),
+    0 0 60px rgba(201, 168, 76, 0.15);
+}
+
+.tour-card--featured .tour-card-image {
+  height: 260px;
+}
+
+.tour-card--featured .tour-card-title {
+  font-size: 1.4rem;
+}
+
+.tour-card--featured .tour-card-desc {
+  font-size: 0.95rem;
+}
+
+.tour-card--featured .tour-price-value {
+  font-size: 1.8rem;
+}
+
+/* Crown icon for featured badge */
+.tour-card--featured .tour-card-badge {
+  background: var(--gradient-cta);
+  color: var(--void-black);
+  font-size: 11px;
+  padding: 7px 16px;
+  box-shadow: 0 4px 16px rgba(201, 168, 76, 0.35);
+}
+
+/* ============================================================
+   IMAGE
+   ============================================================ */
+
+.tour-card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.tour-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.tour-card-link:hover .tour-card-image img {
+  transform: scale(1.1);
+}
+
+/* Overlay de gradiente sutil en la imagen */
+.tour-card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(10,10,10,0.25) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Badge */
+.tour-card-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 14px;
+  background: var(--void-black);
+  color: var(--pure-white);
+  border-radius: var(--radius-full);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 4;
+  backdrop-filter: blur(8px);
+}
+
+.tour-card-badge.outlined {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--void-black);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================================
+   BODY
+   ============================================================ */
+
+.tour-card-body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  position: relative;
+  z-index: 3;
+}
+
+.tour-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--void-black);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.tour-card-desc {
+  font-size: 0.88rem;
+  color: var(--fog);
+  line-height: 1.6;
+  text-wrap: pretty;
+  margin: 0;
+}
+
+/* ============================================================
+   RATING
+   ============================================================ */
+
+.tour-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.tour-stars {
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.tour-rating-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--stone);
+}
+
+/* ============================================================
+   META
+   ============================================================ */
+
+.tour-card-meta {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  margin-top: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.tour-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--stone);
+}
+
+.tour-meta-item svg {
+  width: 15px;
+  height: 15px;
+  color: var(--gold-dark);
+  opacity: 0.8;
+}
+
+/* ============================================================
+   FOOTER / PRICE / CTA
+   ============================================================ */
+
+.tour-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-sm);
+}
+
+.tour-price-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 3px;
+}
+
+.tour-price-value {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.section-editorial .tour-cta {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--pure-white);
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--void-black);
+  border: 1px solid rgba(255,255,255,0.1);
+  white-space: nowrap;
+  width: auto;
+  min-height: 0;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.section-editorial .tour-cta-arrow {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-editorial .tour-card-link:hover .tour-cta {
+  background: var(--gold);
+  color: var(--void-black);
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+
+.section-editorial .tour-card-link:hover .tour-cta-arrow {
+  transform: translateX(4px);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1200px) {
+  .tours-grid {
+    gap: 20px;
+  }
+
+  .tour-card-image {
+    height: 180px;
+  }
+
+  .tour-card--featured .tour-card-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tours-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .tour-card--featured .tour-card-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-editorial {
+    padding: var(--space-4xl) 0;
+  }
+
+  .editorial-title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  .tours-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .tour-card-image {
+    height: 220px;
+  }
+
+  .tour-card--featured .tour-card-image {
+    height: 240px;
+  }
+
+  .tour-card-body {
+    padding: var(--space-md);
+  }
+
+  .tour-card-title {
+    font-size: 1.25rem;
+  }
+
+  .tour-card-desc {
+    font-size: 0.9rem;
+  }
+
+  .tour-price-value {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tour-card-image {
+    height: 200px;
+  }
+
+  .tour-card--featured .tour-card-image {
+    height: 220px;
+  }
+}
